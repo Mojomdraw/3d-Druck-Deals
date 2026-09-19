@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D-Druck Deals</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card: #1a1d24;
+    --accent: #4fd1c5;
+    --text: #eaeaea;
+    --muted: #9aa0aa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+  }
+  .wrap { width: 100%; max-width: 480px; text-align: center; }
+  .avatar {
+    width: 84px; height: 84px; border-radius: 50%;
+    background: var(--accent);
+    margin: 0 auto 16px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px;
+  }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p.sub { color: var(--muted); margin: 0 0 28px; font-size: 14px; }
+
+  a.deal-link {
+    display: block;
+    background: var(--card);
+    color: var(--text);
+    text-decoration: none;
+    padding: 16px 18px;
+    border-radius: 14px;
+    margin-bottom: 14px;
+    border: 1px solid #2a2e37;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  a.deal-link:hover { transform: translateY(-2px); border-color: var(--accent); }
+
+  .deal-title { font-weight: 600; font-size: 15px; }
+  .deal-meta { color: var(--muted); font-size: 13px; margin-top: 4px; }
+  .badge {
+    display: inline-block;
+    background: var(--accent);
+    color: #06201d;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-left: 6px;
+  }
+
+  footer { margin-top: 30px; font-size: 11px; color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="avatar">🖨️</div>
+    <!-- <<< HIER: deinen Account-Namen eintragen >>> -->
+    <h1>@dein_3d_druck_deals</h1>
+    <p class="sub">Täglich frische Rabatte auf Drucker, Filament & Zubehör</p>
+
+    <!--
+      HIER: Für jeden Deal, den dein Skript findet/postet, einen Block wie unten
+      hinzufügen. Idealerweise generierst du diese Blöcke später automatisch
+      aus deiner Datenbank (Modul 4) statt sie manuell zu pflegen.
+    -->
+    <a class="deal-link" href="https://www.amazon.de/dp/BEISPIEL?tag=DEINE-AMAZON-TAG-HIER" target="_blank" rel="noopener sponsored">
+      <div class="deal-title">Beispiel: PLA Filament 1kg <span class="badge">-25%</span></div>
+      <div class="deal-meta">statt 24,99 € nur 18,74 €</div>
+    </a>
+
+    <a class="deal-link" href="https://www.amazon.de/dp/BEISPIEL2?tag=DEINE-AMAZON-TAG-HIER" target="_blank" rel="noopener sponsored">
+      <div class="deal-title">Beispiel: Ender 3 V3 SE <span class="badge">-30%</span></div>
+      <div class="deal-meta">statt 199 € nur 139 €</div>
+    </a>
+
+    <!-- <<< HIER: weitere Deal-Links nach demselben Muster ergänzen >>> -->
+
+    <footer>
+      Enthält Affiliate-Links. Bei einem Kauf über diese Links erhalte ich ggf.
+      eine kleine Provision, für dich ändert sich der Preis nicht.
+    </footer>
+  </div>
+</body>
+</html>
